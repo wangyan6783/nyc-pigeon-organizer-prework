@@ -5,6 +5,8 @@ def nyc_pigeon_organizer(data)
       names.each { |name|
         if new_data[name] == nil
           new_data[name] = {}
+          new_data[name][category] = [attributes]
+        else
         end
       }
     }
