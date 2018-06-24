@@ -4,7 +4,7 @@ def nyc_pigeon_organizer(data)
     info.each { |attributes, names|
       names.each { |name|
         if new_data[name] == nil
-          
+          new_data[name] = {}
         end
       }
     }
