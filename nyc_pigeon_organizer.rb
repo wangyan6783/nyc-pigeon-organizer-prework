@@ -6,19 +6,13 @@ def nyc_pigeon_organizer(data)
         if new_data[name] == nil
           new_data[name] = {}
           new_data[name][category] = [attributes]
+        elsif new_data[name][category] == nil
+          new_data[name][category] = [attributes]
         else
+          new_data[name][category] << attributes
         end
       }
     }
   }
-  
-  
-  colors = data[:color]
-  colors.each { |color, names|
-    names.each { |name|
-      if new_data[name]
-        
-      end
-    }
-  }
-end
+  new_data
+end 
