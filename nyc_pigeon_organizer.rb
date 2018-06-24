@@ -3,7 +3,9 @@ def nyc_pigeon_organizer(data)
   data.each { |category, info|
     info.each { |attributes, names|
       names.each { |name|
-        if new_data[name]
+        if new_data[name] == nil
+          
+        end
       }
     }
   }
