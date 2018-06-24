@@ -3,7 +3,7 @@ def nyc_pigeon_organizer(data)
   colors = data[:color]
   colors.each { |color, names|
     names.each { |name|
-      if new_data.keys.include?(name)
+      if new_data[name]
     }
   }
 end
